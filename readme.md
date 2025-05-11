@@ -20,10 +20,10 @@ in [Game Dev Tycoon](http://www.greenheartgames.com/app/game-dev-tycoon/).
 Since then, it has been open-sourced and is
 [used in many other projects](https://github.com/greenheartgames/greenworks/wiki/Apps-games-using-greenworks).
 * Currently Greenworks supports:
-  * node v0.8, v0.10, v0.12, v4, v5, v6, v7, v8, v9 and v10
+  * node v0.8, v0.10, v0.12, v4, v5, v6, v7, v8, v9 and v10+
   * NW.js v0.8, v0.11+
   * Electron v1.0.0+
-  * Steam SDK v1.42 
+  * Steam SDK v1.62
 * Greenworks is built using [Native Abstractions for Node.js](https://github.com/nodejs/nan) to
 support different node versions.
 * The project is currently funded by Greenheart Games and other
@@ -39,6 +39,16 @@ You can also download [daily automated builds](https://greenworks-prebuilds.arma
 ## Documentation
 
 Guides and the API references are located in [docs](docs) directory.
+
+## Contributions
+
+This project is not actively developed but is maintained at best-effort.
+Due to my limited time, responses to issues and code reviews may be slow.
+If you need additional support or have big great ideas, please reach out to
+the [maintainer](https://github.com/hokein).
+
+While [many games]((https://github.com/greenheartgames/greenworks/wiki/Apps-games-using-greenworks)) uses Greenworks successfully in production,
+depending on your needs, you might want to consider [alternatives](docs/alternatives.md).
 
 ## License
 

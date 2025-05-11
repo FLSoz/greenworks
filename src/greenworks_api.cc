@@ -32,7 +32,9 @@ NAN_METHOD(InitAPI) {
     SteamUserStats()->RequestUserStats(SteamUser()->GetSteamID());
   }
 
-  greenworks::SteamClient::GetInstance()->AddObserver(new greenworks::SteamEvent(g_persistent_steam_events));
+  greenworks::SteamClient::GetInstance()->AddObserver(
+      new greenworks::SteamEvent(g_persistent_steam_events));
+
   greenworks::SteamClient::StartSteamLoop();
   info.GetReturnValue().Set(Nan::New(success));
 }

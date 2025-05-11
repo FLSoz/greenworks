@@ -239,7 +239,9 @@ GetAuthSessionTicketWorker::GetAuthSessionTicketWorker(Nan::Callback *success_ca
       ticket_buf_size_(0) {}
 
 void GetAuthSessionTicketWorker::Execute() {
-  handle_ = SteamUser()->GetAuthSessionTicket(ticket_buf_, sizeof(ticket_buf_), &ticket_buf_size_);
+  handle_ = SteamUser()->GetAuthSessionTicket(
+      ticket_buf_, sizeof(ticket_buf_), &ticket_buf_size_,
+      /*pSteamNetworkingIdentity=*/nullptr);
   WaitForCompleted();
 }
 
